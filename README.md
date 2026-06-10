@@ -6,7 +6,7 @@ A test website for a farming/agriculture brand. Built with HTML and CSS.
 
 Static landing page showcasing farm produce with a clean, rustic design.
 
-<video src="demo.mp4" controls width="100%"></video>
+<video src="https://github.com/throni001/test-web/raw/main/demo.mp4" controls width="100%"></video>
 
 ## Files
 
