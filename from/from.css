@@ -1,0 +1,20 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contact-us {
+    width: 100%;
+    padding: 10px 10%;
+}
+h1 {
+    border-bottom: 2px solid red;
+    text-align: center;
+}
+
+input {
+
+    #innoutt{
+        width: 100%;
+    }

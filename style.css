@@ -1,0 +1,518 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        filter 0.4s ease;
+}
+
+a,
+button,
+i,
+.offer,
+.info {
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fee4c3;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navbar .nav-list a {
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 700;
+}
+.navbar {
+    padding: 0px 100px;
+}
+.hero-section .hero-img img {
+    width: 100%;
+    height: 80vh;
+}
+
+.gallary-section .gallary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+    gap: 30px;
+}
+.gallary-section {
+    padding: 100px;
+    background-color: white;
+}
+.gallary-section h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.gallary-section .gallary img {
+    border-radius: 10%;
+    width: 500px;
+    height: 500px;
+}
+
+.offer-section {
+    background-color: #fee4c3;
+    padding-bottom: 100px;
+}
+.offer-section .offer-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 15px;
+    margin: 0px 100px;
+}
+
+.offer-list .offer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 5px 5px 2px #727272;
+}
+
+.offer-list .offer h2:hover {
+    color: green;
+    transition: 0.3s;
+}
+
+.offer-section .offer-text {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.farm-section {
+    width: 100%;
+    min-height: 70vh; /* Ensures full viewport coverage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.farm-img {
+    width: 100%;
+    min-height: 70vh;
+    /* Replace 'your-image-path.jpg' with your actual background image URL */
+    background-image: url(farm-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10%; /* Creates the side margins for the text block */
+    color: #ffffff;
+}
+
+.farm-img button {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 16px;
+}
+
+.farm-img p {
+    margin: 30px;
+}
+.map-section {
+    padding: 50px 100px;
+    background-color: #727272;
+}
+
+.map-section .information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.map-section .map iframe {
+    width: 100%;
+}
+
+.info .fa-solid {
+    color: yellow;
+    font-size: 25px;
+}
+
+.logo-side img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    background-color: white;
+}
+
+.sm-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sm-side h3 {
+    padding-bottom: 10px;
+}
+
+.sm-logo i {
+    font-size: 30px;
+}
+.fa-facebook {
+    color: blue;
+}
+.fa-twitter {
+    color: black;
+}
+.fa-whatsapp {
+    color: green;
+}
+
+/* Hover Effects */
+
+/* ===== NAVBAR HOVER EFFECTS ===== */
+.navbar:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list a {
+    position: relative;
+}
+
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(9, 223, 52);
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+.nav-list a:hover {
+    color: rgb(9, 223, 52);
+    transform: translateY(-2px);
+}
+
+.nav-img {
+    transition: all 0.3s ease;
+}
+
+.nav-img:hover {
+    transform: scale(1.05);
+}
+
+.nav-img img:hover {
+    transform: scale(1.15) rotate(360deg);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== HERO SECTION HOVER ===== */
+.hero-section .hero-img {
+    overflow: hidden;
+}
+
+.hero-section .hero-img img {
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+.hero-section .hero-img img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.05) contrast(1.05);
+}
+
+/* ===== GALLERY SECTION HOVER ===== */
+.gallary-section .gallary {
+    perspective: 1000px;
+}
+
+.gallary-section .gallary img {
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        filter 0.5s ease;
+    cursor: pointer;
+}
+
+.gallary-section .gallary img:hover {
+    transform: scale(1.1) rotateZ(2deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.15) saturate(1.1);
+}
+
+.gallary-section h1 {
+    transition: all 0.3s ease;
+}
+
+.gallary-section h1:hover {
+    transform: scale(1.05);
+    letter-spacing: 3px;
+}
+
+/* ===== FARM SECTION HOVER ===== */
+.farm-img {
+    transition: all 0.5s ease;
+}
+
+.farm-img:hover {
+    background-size: 110%;
+}
+
+.farm-img h1 {
+    transition: all 0.3s ease;
+}
+
+.farm-img h1:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.farm-img p {
+    transition: all 0.4s ease;
+}
+
+.farm-img p:hover {
+    transform: scale(1.02);
+    letter-spacing: 1px;
+}
+
+.farm-img button {
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.farm-img button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.15);
+}
+
+.farm-img button:active {
+    transform: translateY(-2px) scale(0.98);
+}
+
+/* ===== MAP SECTION HOVER ===== */
+.map-section {
+    transition: all 0.3s ease;
+}
+
+.info {
+    transition: all 0.4s ease;
+    cursor: default;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info:hover i {
+    transform: scale(1.5) rotate(-15deg);
+    filter: drop-shadow(0 4px 10px rgba(255, 255, 0, 0.4));
+}
+
+.info h3 {
+    transition: all 0.3s ease;
+}
+
+.info:hover h3 {
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+.info p {
+    transition: all 0.3s ease;
+}
+
+.info:hover p {
+    color: #ffd700;
+}
+
+.map-section .map iframe {
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.map-section .map iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== FOOTER HOVER ===== */
+.footer-section {
+    transition: all 0.3s ease;
+}
+
+.footer-section:hover {
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo-side {
+    transition: all 0.3s ease;
+}
+
+.logo-side:hover {
+    transform: translateX(5px);
+}
+
+.logo-side img {
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.logo-side img:hover {
+    transform: scale(1.15) rotate(-10deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo-side p {
+    transition: all 0.3s ease;
+}
+
+.logo-side:hover p {
+    color: #555;
+}
+
+.sm-side h3 {
+    transition: all 0.3s ease;
+}
+
+.sm-side h3:hover {
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+.sm-logo i {
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.sm-logo i:hover {
+    transform: scale(1.4) translateY(-5px);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+}
+
+.sm-logo .fa-facebook:hover {
+    animation: none;
+}
+
+.sm-logo .fa-twitter:hover {
+    animation: none;
+}
+
+.sm-logo .fa-whatsapp:hover {
+    animation: none;
+}
+
+/* ===== GLOBAL ANIMATIONS ===== */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*service section*/
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 0px; 
+    padding: 20px;
+    height: 500px;
+
+}
+
+.service-grid .icon{
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    padding-top: 20px;
+}
+.service-grid .icon i{
+    font-size: 70px;
+    color: green;
+}
+
+.service-head h1{
+    color: green;
+    text-align: center;
+    padding: 60px 0px 0px 30px;
+    margin-bottom: 30px;
+}
+
+.service-head p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.our-service{padding: 100px;
+background-color: white;}
+
+.service-grid .icon{
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: #555;
+}
+
+.service-grid .icon:hover{
+    background-color: #555;
+    color: white;
+    transition: 0.5s;
+    scale: 1.1;
+    border: rgb(247, 211, 6);
+    border-style: solid;
+}
+
+.service-grid .icon i:hover {
+    color: yellow;
+    transition: 0.5s;
+}
