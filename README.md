@@ -6,6 +6,8 @@ A test website for a farming/agriculture brand. Built with HTML and CSS.
 
 Static landing page showcasing farm produce with a clean, rustic design.
 
+<video src="2026-06-10%2016-40-42.mp4" controls width="100%"></video>
+
 ## Files
 
 - `index.html` - Main landing page
